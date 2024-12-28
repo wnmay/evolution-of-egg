@@ -4,6 +4,6 @@ import { RouterLink } from 'vue-router';
 
 <template>
   <main>
-    <RouterLink to="/egg">egg page</RouterLink>
+    <RouterLink to="/egg"><div>egg page</div></RouterLink>
   </main>
 </template>
