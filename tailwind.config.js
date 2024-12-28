@@ -11,6 +11,11 @@ module.exports = {
       thisYellow: '#FFD75C',
       thisGrey: '#F5F5F5'
     }},
+    fontFamily: {
+      pecita: 'pecita',
+      mergeOne: 'mergeOne',
+      
+    },
   },
   plugins: [],
 }

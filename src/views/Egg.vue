@@ -4,7 +4,7 @@
 
 <template>
 <div class="flex flex-col items-center justify-center h-screen bg-thisGrey">
-  <div class="text-6xl text-black">
+  <div class="text-6xl text-black font-pecita">
     Evolution of Egg
   </div>
 
