@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Button from '@/components/Button.vue';
+
 
 </script>
 
@@ -14,14 +16,10 @@
 
   <div class="flex flex-col gap-4 mt-6">
     <RouterLink to="/omelette">
-      <button class="px-6 py-2 bg-thisYellow text-black font-semibold border-2 border-thisBlack rounded-lg hover:bg-yellow-500 focus:outline-none">
-        omelette
-      </button>
+      <Button button-name="omelette"></Button>
     </RouterLink>
     <RouterLink to="/fried-egg">
-      <button class="px-6 py-2 bg-thisYellow text-black font-semibold border-2 border-thisBlack rounded-lg hover:bg-yellow-500 focus:outline-none">
-        fried egg
-      </button>
+      <Button button-name="fried egg"></Button>
     </RouterLink>
   </div>
 </div>
