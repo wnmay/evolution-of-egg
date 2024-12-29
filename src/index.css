@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'pecita';
+    src: url('public/fonts/Pecita.otf') format("opentype");
+
+}
+
+@font-face {
+    font-family: 'mergeOne';
+    src: url('public/fonts/MergeOne-Regular.ttf') format("truetype");
+}
+@layer base {
+    body {
+      font-family: 'mergeOne';
+    }
+  }
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
