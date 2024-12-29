@@ -8,6 +8,12 @@
     font-family: 'mergeOne';
     src: url('public/fonts/MergeOne-Regular.ttf') format("truetype");
 }
+
+@font-face {
+    font-family: 'payTone';
+    src: url('public/fonts/PaytoneOne-Regular.ttf') format("truetype");
+}
+
 @layer base {
     body {
       font-family: 'mergeOne';

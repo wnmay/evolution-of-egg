@@ -9,12 +9,13 @@ module.exports = {
     {colors:{
       thisBlack: '#3E3E3E',
       thisYellow: '#FFD75C',
-      thisGrey: '#F5F5F5'
+      thisGrey: '#F5F5F5',
+      
     }},
     fontFamily: {
       pecita: 'pecita',
       mergeOne: 'mergeOne',
-      
+      payTone: 'payTone'
     },
   },
   plugins: [],
