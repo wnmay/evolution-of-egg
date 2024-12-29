@@ -29,19 +29,23 @@
           type="text" 
           class="px-4 py-2 text-xl mb-4 w-2/3 border rounded-lg border-thisYellow bg-transparent text-white placeholder-white" 
           placeholder="Enter your choice"/>
-        
-        <button 
-          @click="submitInput" 
-          class="px-6 py-3 text-lg rounded-full border bg-thisYellow text-black cursor-pointer transition-all duration-200 hover:bg-yellow-400">
-          Submit
-        </button>
+    
+        <Button @click="submitInput" :buttonName="'Submit'" />
+
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Button from '@/components/Button.vue';
+console.log(Button);
+
+
 export default {
+  components: {
+    Button,
+  },
   data() {
     return {
       userInput: '',
