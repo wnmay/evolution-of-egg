@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Egg from '@/views/Egg.vue'
+import Credit from '@/views/Credit.vue'
 import Omelette from '@/views/Omelette.vue'
 import FriedEgg from '@/views/FriedEgg.vue'
 
@@ -16,6 +17,11 @@ const router = createRouter({
       path: '/egg',
       name: 'egg',
       component: Egg,
+    },
+    {
+      path: '/credit',
+      name: 'credit',
+      component: Credit,
     },
     {
       path: '/omelette',
