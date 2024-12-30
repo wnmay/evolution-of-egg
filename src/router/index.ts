@@ -26,12 +26,12 @@ const router = createRouter({
     {
       path: '/omelette',
       name: 'omelette',
-      component: Omelette,
+      component: Omelette
     },
     {
       path: '/fried-egg',
-      name: 'fried egg',
-      component: FriedEgg,
+      name: 'fried-egg',
+      component: FriedEgg
     },
   ],
 })

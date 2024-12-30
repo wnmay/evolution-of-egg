@@ -17,31 +17,33 @@
     </div>
 
     <!-- Content Overlay -->
-    <div class="relative flex flex-col items-center justify-center h-full text-white text-center z-20">
+    <div class="relative flex flex-col items-center justify-center h-full text-thisGrey text-center z-20">
       <div v-if="message" class="mt-6 text-xl">
         <p>{{ message }}</p>
       </div>
       <div v-else class="flex flex-col justify-center items-center">
-        <h1 class="text-4xl mb-6 text-white break-words">Dear customer, What can I serve you today?</h1>
+        <h1 class="text-4xl mb-6 text-thisGrey break-words">Dear customer, What can I serve you today?</h1>
         
         <input 
           v-model="userInput" 
           type="text" 
-          class="px-4 py-2 text-xl mb-4 w-2/3 border rounded-lg border-thisYellow bg-transparent text-white placeholder-white" 
+          class="px-4 py-2 text-xl mb-4 w-2/3 border rounded-lg border-thisYellow bg-transparent text-thisGrey placeholder-white" 
           placeholder="Enter your choice"/>
-        
-        <button 
-          @click="submitInput" 
-          class="px-6 py-3 text-lg rounded-full border bg-thisYellow text-black cursor-pointer transition-all duration-200 hover:bg-yellow-400">
-          Submit
-        </button>
+    
+        <Button @click="submitInput" :buttonName="'Submit'" ></Button>
+
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Button from '@/components/Button.vue';
+
 export default {
+  components: {
+    Button,
+  },
   data() {
     return {
       userInput: '',
@@ -54,7 +56,7 @@ export default {
       this.message = "We don’t serve that kind of thing. We only have...";
 
       setTimeout(() => {
-        this.backgroundClass = 'bg-white';
+        this.backgroundClass = 'bg-thisGrey';
 
         setTimeout(() => {
           this.$router.push('/egg');
